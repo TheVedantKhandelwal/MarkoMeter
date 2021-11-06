@@ -11,10 +11,10 @@ while x <inp:
     p = int(p)
     c = int(c)
     m = int(m)
-    data = pd.read_csv('C:/Users/khand/Documents/1234.csv')
+    data = pd.read_csv('YOUR PATH HERE')
     data = data.append({'Physics':p,'Chemistry':c,'Maths':m},ignore_index=True)
     data.drop(data.filter(regex="Unnamed:"),axis=1, inplace=True)
-    data.to_csv("C:/Users/khand/Documents/1234.csv")
+    data.to_csv("YOUR PATH HERE")
     x = x+1
 import main
     
