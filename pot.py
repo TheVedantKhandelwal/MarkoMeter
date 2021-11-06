@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 def pot():#to display a plotted graph
-    graph = pd.read_csv('C:/Users/khand/Documents/1234.csv')
+    graph = pd.read_csv('YOUR PATH HERE')
     inp = input('Options: \nPhysics: 1\nChemistry: 2\nMaths: 3\nMy Choice:')
     if inp=='1':
         a = pd.DataFrame(graph)
