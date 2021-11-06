@@ -1,7 +1,7 @@
 # MarkoMeter
 ##   MarkoMeter	: 	Student Result Management System
 ##   Author 	: 	Vedant Khandelwal
-##   Version 	: 	1.0
+##   Version 	: 	2.0
 ##   Github 	: 	https://github.com/TheVedantKhandelwal
  
  # Installation - 
@@ -11,5 +11,5 @@
  
  ## Setup : -
     Create a CSV with columns - 'Physics','Chemistry','Maths' in the Documents Folder
-    Open 'markometer.py' in a text editor and Search for "YOUR PATH HERE", replace text in quotes with the path to the CSV file you just made
+    Open every .py in a text editor and Search for "YOUR PATH HERE", replace text in quotes with the path to the CSV file you just made
     
