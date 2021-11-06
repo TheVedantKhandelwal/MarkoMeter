@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 def drop():#Dropping rows from CSV
     
-    data = pd.read_csv('C:/Users/khand/Documents/1234.csv')
+    data = pd.read_csv('YOUR PATH HERE')
     data.drop(data.filter(regex="Unnamed:"),axis=1, inplace=True)
     print(data)
     
@@ -10,6 +10,6 @@ def drop():#Dropping rows from CSV
     data = data.drop([inp])
     print(data)
     
-    data.to_csv("C:/Users/khand/Documents/1234.csv")
+    data.to_csv("YOUR PATH HERE")
 drop()
 import main
