@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 def bar():#To display Bar Graph
-    graph = pd.read_csv('C:/Users/khand/Documents/1234.csv')  #Path to CSV 
+    graph = pd.read_csv('YOUR PATH HERE')  #Path to CSV 
     inp = input('Choice: \nPhysics: 1\nChemistry: 2\nMaths: 3')
     if inp=='1':
         a = pd.DataFrame(graph)
