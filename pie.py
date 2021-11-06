@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 def pie():#To display pie graph
-    data = pd.read_csv('C:/Users/khand/Documents/1234.csv')
+    data = pd.read_csv('YOUR PATH HERE')
     print(data)
     data.drop(data.filter(regex="Unnamed:"),axis=1, inplace=True)
     inp = int(input("Plot Graph for? :"))
