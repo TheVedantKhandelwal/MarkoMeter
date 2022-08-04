@@ -12,7 +12,8 @@ Markometer is a Student Marks Management System, Written in python, using the Li
 
 After Installing and unzipping the .zip from releases, run
 ```
-pip install -r requirements.txt
+chmod +x ./setup.sh
+./setup.sh
 ```
 
 ## Utilize
