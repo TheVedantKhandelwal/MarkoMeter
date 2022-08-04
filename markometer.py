@@ -59,16 +59,16 @@ def marks():#Taking input for marks
         p = int(p)
         c = int(c)
         m = int(m)
-        data = pd.read_csv('.CSV PATH HERE')
+        data = pd.read_csv('MARKOMETER.csv')
         data = data.append({'Physics':p,'Chemistry':c,'Maths':m},ignore_index=True)
         data.drop(data.filter(regex="Unnamed:"),axis=1, inplace=True)
-        data.to_csv(".CSV PATH HERE")
+        data.to_csv("MARKOMETER.csv")
         x = x+1
     init()
     
 
 def bar():#To display Bar Graph
-    graph = pd.read_csv('YOUR PATH HERE')
+    graph = pd.read_csv('MARKOMETER.csv')
     inp = input('Choice: \nPhysics: 1\nChemistry: 2\nMaths: 3')
     if inp=='1':
         a = pd.DataFrame(graph)
@@ -92,7 +92,7 @@ def bar():#To display Bar Graph
     init()
     
 def pot():#to display a plotted graph
-    graph = pd.read_csv('YOUR PATH HERE')
+    graph = pd.read_csv('MARKOMETER.csv')
     inp = input('Options: \nPhysics: 1\nChemistry: 2\nMaths: 3\nMy Choice:')
     if inp=='1':
         a = pd.DataFrame(graph)
@@ -118,7 +118,7 @@ def pot():#to display a plotted graph
     init()
 
 def pie():#To display pie graph
-    data = pd.read_csv('.CSV PATH HERE')
+    data = pd.read_csv('MARKOMETER.csv')
     print(data)
     data.drop(data.filter(regex="Unnamed:"),axis=1, inplace=True)
     inp = int(input("Plot Graph for? :"))
@@ -147,7 +147,7 @@ def pie():#To display pie graph
     
 def drop():#Dropping rows from CSV
     
-    data = pd.read_csv('.CSV PATH HERE')
+    data = pd.read_csv('MARKOMETER.csv')
     data.drop(data.filter(regex="Unnamed:"),axis=1, inplace=True)
     print(data)
     
@@ -155,11 +155,11 @@ def drop():#Dropping rows from CSV
     data = data.drop([inp])
     print(data)
     
-    data.to_csv("YOUR PATH HERE")
+    data.to_csv("MARKOMETER.csv")
     init()
     
 def show():#To display CSV as a dataframe
-    data = pd.read_csv('.CSV PATH HERE')
+    data = pd.read_csv('MARKOMETER.csv')
     data.drop(data.filter(regex="Unnamed:"),axis=1, inplace=True)
     print(data)
     init()
